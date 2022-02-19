@@ -1,0 +1,19 @@
+﻿<Window x:Class="demo.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="Invert自动键键值(10进制)" Height="180" Width="350" ResizeMode="NoResize" Closing="Window2_Closing">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock HorizontalAlignment="Left" Margin="40,43,0,50" TextWrapping="Wrap" Text="按下键值" VerticalAlignment="Top"/>
+            <TextBox Name="IAutoKeyDown" MaxLength="6" x:FieldModifier="public" HorizontalAlignment="Left" Height="23" Margin="10,40,10,50" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" PreviewKeyDown="TBox_KeyPress"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,43,0,0" TextWrapping="Wrap" Text="抬起键值" VerticalAlignment="Top"/>
+            <TextBox Name="IAutoKeyUp" MaxLength="6" x:FieldModifier="public" HorizontalAlignment="Left" Height="23" Margin="10,40,10,50" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" PreviewKeyDown="TBox_KeyPress" TextChanged="IAutoKeyUp_TextChanged"/>
+        </StackPanel>
+        <Button Content="保存" HorizontalAlignment="Left" Height="42" Margin="119,85,0,0" VerticalAlignment="Top" Width="117" Click="ButtonI_Click"/>
+
+    </Grid>
+</Window>
